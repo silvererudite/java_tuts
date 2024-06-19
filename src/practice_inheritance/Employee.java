@@ -15,7 +15,7 @@ public class Employee extends Worker{
     }
 
     public int daysWorked(String hireDate) throws ParseException {
-        return super.getAge("25-06-2023");
+        return super.getDateDiff(hireDate);
     }
 
 }

@@ -22,19 +22,21 @@ public class Worker {
                 .toLocalDate();
     }
 
-    private static int calculateAge(LocalDate birthDate) {
-        if ((birthDate != null)) {
-            return Period.between(birthDate, LocalDate.now()).getYears();
+    private static int calculateDiff(LocalDate startDate) {
+        if ((startDate != null)) {
+            System.out.println("startDate "+ startDate);
+            System.out.println("currentDate "+ LocalDate.now());
+            return Period.between(startDate, LocalDate.now()).getMonths();
         } else {
             return 0;
         }
     }
-    public int getAge(String startDate) throws ParseException {
+    public int getDateDiff(String startDate) throws ParseException {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-        Date birthDateParsed = dateFormat.parse(startDate);
-        LocalDate birthLocalDate = convertToLocalDate(birthDateParsed);
-        int age = calculateAge(birthLocalDate);
-        return age;
+        Date startDateParsed = dateFormat.parse(startDate);
+        LocalDate startLocalDate = convertToLocalDate(startDateParsed);
+        int diff = calculateDiff(startLocalDate);
+        return diff;
     }
 
     public String getName() {
