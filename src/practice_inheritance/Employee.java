@@ -18,4 +18,11 @@ public class Employee extends Worker{
         return super.getDateDiff(hireDate);
     }
 
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "employeeId=" + employeeId +
+                ", hireDate='" + hireDate + '\'' +
+                "} " + super.toString();
+    }
 }

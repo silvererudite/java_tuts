@@ -2,7 +2,7 @@ package practice_inheritance;
 
 public class SalariedEmployee extends Employee{
     private double annualSalary;
-    private boolean isRetired;
+    private boolean isRetired = false;
 
     public void setRetired(boolean retired) {
         isRetired = retired;
@@ -12,4 +12,12 @@ public class SalariedEmployee extends Employee{
         super(name, dob, hireDate);
         this.annualSalary = annualSalary;
     }
+
+    //@Override
+//    public String toString() {
+//        return "SalariedEmployee{" +
+//                "annualSalary=" + annualSalary +
+//                ", isRetired=" + isRetired +
+//                "} " + super.toString();
+//    }
 }
