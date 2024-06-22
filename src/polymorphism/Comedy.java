@@ -5,6 +5,9 @@ public class Comedy extends Movie{
         super(title);
     }
 
+    public void watchComedy(){
+        System.out.println("Watching a comedy!!!");
+    }
     @Override
     public void watchMovie() {
         super.watchMovie();

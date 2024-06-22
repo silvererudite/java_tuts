@@ -5,6 +5,10 @@ public class SciFi extends Movie{
         super(title);
     }
 
+    public void watchSciFi(){
+        System.out.println("Watching a science fiction!!!");
+    }
+
     @Override
     public void watchMovie() {
         super.watchMovie();
