@@ -3,6 +3,6 @@ package concurrency;
 public class AnotherThread extends Thread{
     @Override
     public void run() {
-        System.out.println("Hello from another thread");
+        System.out.println("Hello from " + currentThread().getName());
     }
 }
