@@ -21,6 +21,8 @@ public class Main {
         }
     }
     public static void main(String[] args) throws ParseException {
+
+
         LocalDate d1 = LocalDate.of(1996, 12, 19);
         LocalDate d2 = LocalDate.now();
         String birthDateString = "19-12-1996";
